@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76c08e70-965a-481c-b8ad-89171dcff78a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/flink_demo_1.10" />
+  </component>
+  <component name="ProjectId" id="1ZqpElYcSrUIDtaaZwmG0OTqgpK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="/temp" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="/temp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DataStreamAggregateOperator">
+    <configuration name="DataStreamAggregateOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.DataStreamAggregateOperator" />
+      <module name="flink_demo_1.10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataStreamFoldOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.DataStreamFoldOperator" />
+      <module name="flink_demo_1.10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataStreamKeyByOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.DataStreamKeyByOperator" />
+      <module name="flink_demo_1.10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataStreamReduceOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.DataStreamReduceOperator" />
+      <module name="flink_demo_1.10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunMainJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.RunMainJava" />
+      <module name="flink_demo_1.10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DataStreamAggregateOperator" />
+        <item itemvalue="Application.DataStreamFoldOperator" />
+        <item itemvalue="Application.DataStreamReduceOperator" />
+        <item itemvalue="Application.RunMainJava" />
+        <item itemvalue="Application.DataStreamKeyByOperator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76c08e70-965a-481c-b8ad-89171dcff78a" name="Default Changelist" comment="" />
+      <created>1585576368489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585576368489</updated>
+      <workItem from="1585576371107" duration="212000" />
+      <workItem from="1585623349308" duration="37560000" />
+      <workItem from="1586332219679" duration="1773000" />
+      <workItem from="1586767974374" duration="660000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="179" width="800" height="717" key="#Intentions" timestamp="1585641880853">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="440" y="179" width="800" height="717" key="#Intentions/0.23.1680.982@0.23.1680.982" timestamp="1585641880853" />
+    <state x="653" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1586178294449">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="653" y="205" key="#com.intellij.ide.util.MemberChooser/0.23.1680.982@0.23.1680.982" timestamp="1586178294449" />
+    <state x="460" y="212" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585576450933">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="460" y="212" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1680.982@0.23.1680.982" timestamp="1585576450933" />
+    <state width="1638" height="324" key="GridCell.Tab.0.bottom" timestamp="1586183548146">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.0.bottom/0.23.1680.982@0.23.1680.982" timestamp="1586183548146" />
+    <state width="1638" height="324" key="GridCell.Tab.0.center" timestamp="1586183548145">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.0.center/0.23.1680.982@0.23.1680.982" timestamp="1586183548145" />
+    <state width="1638" height="324" key="GridCell.Tab.0.left" timestamp="1586183548145">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.0.left/0.23.1680.982@0.23.1680.982" timestamp="1586183548145" />
+    <state width="1638" height="324" key="GridCell.Tab.0.right" timestamp="1586183548145">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.0.right/0.23.1680.982@0.23.1680.982" timestamp="1586183548145" />
+    <state width="1638" height="324" key="GridCell.Tab.1.bottom" timestamp="1586183548146">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.1.bottom/0.23.1680.982@0.23.1680.982" timestamp="1586183548146" />
+    <state width="1638" height="324" key="GridCell.Tab.1.center" timestamp="1586183548146">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.1.center/0.23.1680.982@0.23.1680.982" timestamp="1586183548146" />
+    <state width="1638" height="324" key="GridCell.Tab.1.left" timestamp="1586183548146">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.1.left/0.23.1680.982@0.23.1680.982" timestamp="1586183548146" />
+    <state width="1638" height="324" key="GridCell.Tab.1.right" timestamp="1586183548146">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.1.right/0.23.1680.982@0.23.1680.982" timestamp="1586183548146" />
+    <state x="328" y="97" key="SettingsEditor" timestamp="1585645293541">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="328" y="97" key="SettingsEditor/0.23.1680.982@0.23.1680.982" timestamp="1585645293541" />
+    <state x="635" y="299" key="chooseDestDirectoryDialog" timestamp="1585643542731">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="635" y="299" key="chooseDestDirectoryDialog/0.23.1680.982@0.23.1680.982" timestamp="1585643542731" />
+    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup" timestamp="1586768447605">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="505" y="239" width="670" height="676" key="search.everywhere.popup/0.23.1680.982@0.23.1680.982" timestamp="1586768447605" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/main/java/RunMain.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flink_demo_1_10$RunMainJava.ic" NAME="RunMainJava Coverage Results" MODIFIED="1585649210526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.*</FILTER>
+    </SUITE>
+  </component>
+</project>
