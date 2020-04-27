@@ -6,6 +6,7 @@ import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
+import util.DateTimeUtil;
 import util.SendMsgUtil;
 
 /**
@@ -31,13 +32,17 @@ public class MyKeyedProcessFunction extends KeyedProcessFunction<String, Message
         /*获取*/
         String currentStatus = value.getStatus();
         Long currentTimer = warningTimer.value();
+        String timeStr = "";
+        if(currentTimer != null){
+            timeStr = DateTimeUtil.stampToDate(currentTimer.toString(),"yyyyMMdd HH:mm:ss");
+        }
 
-        System.out.println("currentStatus:"+currentStatus);
-        System.out.println("lastStatus:"+lastStatus.value());
+        System.out.println("hostName:"+value.getHostName()+",currentStatus:"+currentStatus+",lastStatus:"+lastStatus.value()+
+                ",currentTimer:"+timeStr);
 
         /*连续两次状态都是2 宕机状态，则新建定时器 10秒后进行告警*/
         if("DEAD".equals(currentStatus) && "DEAD".equals(lastStatus.value())){
-            long  timeTs = Long.valueOf(ctx.timerService().currentProcessingTime())+10000L;
+            long  timeTs = Long.valueOf(ctx.timerService().currentProcessingTime())+20000L;
             ctx.timerService().registerProcessingTimeTimer(timeTs);
             warningTimer.update(timeTs);
         }
@@ -48,8 +53,10 @@ public class MyKeyedProcessFunction extends KeyedProcessFunction<String, Message
             }
             warningTimer.clear();
         }
+
         /*更新上一次的状态信息*/
         lastStatus.update(value.getStatus());
+
     }
 
     @Override

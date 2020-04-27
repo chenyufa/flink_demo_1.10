@@ -69,7 +69,7 @@ public class KeyedProcessFunctionMonitor {
 
 
         /*打印报警信息*/
-        warningDS.print();
+        //warningDS.print();
 
         senv.execute();
     }
