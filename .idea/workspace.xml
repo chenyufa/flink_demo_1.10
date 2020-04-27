@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76c08e70-965a-481c-b8ad-89171dcff78a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entity/ProductViewData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/function/MyCountAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/function/MyCountWindowFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/AggregateFunctionMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/DateTimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/StringUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/function/MyKeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/function/MyKeyedProcessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyedProcessFunctionMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyedProcessFunctionMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamAggregateOperator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/operator/DataStreamAggregateOperator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamAggregateOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/operator/DataStreamAggregateOperator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +156,7 @@
       <workItem from="1586769005635" duration="3162000" />
       <workItem from="1586830482952" duration="20447000" />
       <workItem from="1586955552868" duration="48297000" />
+      <workItem from="1587955898947" duration="1163000" />
     </task>
     <task id="LOCAL-00001" summary="ProcessFunction Monitor Demo">
       <created>1586858941684</created>
@@ -174,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586858941684</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AggregateFunction Demo">
+      <created>1587955953258</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587955953259</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +196,8 @@
       <path value="$PROJECT_DIR$/flink_demo_1.10" />
     </ignored-roots>
     <MESSAGE value="ProcessFunction Monitor Demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ProcessFunction Monitor Demo" />
+    <MESSAGE value="AggregateFunction Demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="AggregateFunction Demo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="179" width="800" height="717" key="#Intentions" timestamp="1585641880853">
@@ -209,10 +208,18 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="653" y="205" key="#com.intellij.ide.util.MemberChooser/0.23.1680.982@0.23.1680.982" timestamp="1587717633500" />
+    <state x="578" y="302" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587959216011">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="578" y="302" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1680.982@0.23.1680.982" timestamp="1587959216011" />
     <state x="460" y="212" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1586843406704">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="460" y="212" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1680.982@0.23.1680.982" timestamp="1586843406704" />
+    <state x="614" y="406" width="451" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587959218347">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="614" y="406" width="451" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1680.982@0.23.1680.982" timestamp="1587959218347" />
     <state x="638" y="392" width="772" height="579" key="#xdebugger.evaluate" timestamp="1587092393672">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
