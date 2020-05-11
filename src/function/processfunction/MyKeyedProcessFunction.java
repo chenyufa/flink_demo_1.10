@@ -29,6 +29,11 @@ public class MyKeyedProcessFunction extends KeyedProcessFunction<String, Message
 
     @Override
     public void processElement(MessageInfo value, Context ctx, Collector<String> out) throws Exception {
+        //System.out.println("getCurrentKey:"+ctx.getCurrentKey());
+        //System.out.println("timestamp:"+ctx.timestamp());
+        //System.out.println("timerService - currentProcessingTime:"+ctx.timerService().currentProcessingTime());
+        //System.out.println("timerService - currentWatermark:"+ctx.timerService().currentWatermark());
+
         /*获取*/
         String currentStatus = value.getStatus();
         Long currentTimer = warningTimer.value();
@@ -56,7 +61,6 @@ public class MyKeyedProcessFunction extends KeyedProcessFunction<String, Message
 
         /*更新上一次的状态信息*/
         lastStatus.update(value.getStatus());
-
     }
 
     @Override
