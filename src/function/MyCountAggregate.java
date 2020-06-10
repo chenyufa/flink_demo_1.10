@@ -6,7 +6,7 @@ import org.apache.flink.api.common.functions.AggregateFunction;
 /**
  * @ date: 2020/04/24 15:54
  * @ author: Cheney
- * @ description: 自定义聚合函数
+ * @ description: 自定义的聚合函数
  */
 public class MyCountAggregate implements AggregateFunction<ProductViewData, Long, Long> {
 

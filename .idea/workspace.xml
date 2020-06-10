@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76c08e70-965a-481c-b8ad-89171dcff78a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink_demo_1.10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flink_demo_1.10.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasource/MyStreamDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasource/MyStreamDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/function/processfunction/CountWithTimeoutProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/function/processfunction/CountWithTimeoutProcessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ProcessFunctionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ProcessFunctionExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/RunMainJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/RunMainJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/RunMainJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/RunMainJava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/flink_demo_1.10-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/flink_demo_1.10-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/function/MyCountAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/function/MyCountAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/RunMainJava$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/RunMainJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamAggregateOperator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamAggregateOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamFoldOperator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamFoldOperator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamFoldOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamKeyByOperator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamKeyByOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamReduceOperator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/DataStreamReduceOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Splitter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/flink_demo_1.10-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +182,7 @@
       <workItem from="1590372910840" duration="2716000" />
       <workItem from="1590630586500" duration="20291000" />
       <workItem from="1591175332340" duration="13059000" />
+      <workItem from="1591759272201" duration="372000" />
     </task>
     <task id="LOCAL-00001" summary="ProcessFunction Monitor Demo">
       <created>1586858941684</created>
@@ -197,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589207584636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ProcessFunction Example2">
+      <created>1591759352707</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591759352707</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +238,8 @@
     <MESSAGE value="ProcessFunction Monitor Demo" />
     <MESSAGE value="AggregateFunction Demo" />
     <MESSAGE value="ProcessFunction Example" />
-    <option name="LAST_COMMIT_MESSAGE" value="ProcessFunction Example" />
+    <MESSAGE value="ProcessFunction Example2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProcessFunction Example2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="179" width="800" height="717" key="#Intentions" timestamp="1585641880853">
@@ -250,10 +266,10 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="638" y="392" width="772" height="579" key="#xdebugger.evaluate/0.23.1680.982@0.23.1680.982" timestamp="1587092393672" />
-    <state x="434" y="116" key="CommitChangelistDialog2" timestamp="1589207584518">
+    <state x="434" y="116" key="CommitChangelistDialog2" timestamp="1591759352556">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state x="434" y="116" key="CommitChangelistDialog2/0.23.1680.982@0.23.1680.982" timestamp="1589207584518" />
+    <state x="434" y="116" key="CommitChangelistDialog2/0.23.1680.982@0.23.1680.982" timestamp="1591759352556" />
     <state x="680" y="427" key="GitRewordDialog" timestamp="1587956057926">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
@@ -298,10 +314,10 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="373" y="79" key="SettingsEditor/0.23.1680.982@0.23.1680.982" timestamp="1590740226005" />
-    <state x="440" y="254" key="Vcs.Push.Dialog.v2" timestamp="1589207590351">
+    <state x="440" y="254" key="Vcs.Push.Dialog.v2" timestamp="1591759357066">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state x="440" y="254" key="Vcs.Push.Dialog.v2/0.23.1680.982@0.23.1680.982" timestamp="1589207590351" />
+    <state x="440" y="254" key="Vcs.Push.Dialog.v2/0.23.1680.982@0.23.1680.982" timestamp="1591759357066" />
     <state x="635" y="299" key="chooseDestDirectoryDialog" timestamp="1585643542731">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
