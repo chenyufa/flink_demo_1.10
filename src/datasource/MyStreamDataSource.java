@@ -17,12 +17,14 @@ public class MyStreamDataSource extends RichParallelSourceFunction<Tuple3<String
     public void run(SourceContext<Tuple3<String, Long, Long>> sourceContext) throws Exception {
 
         Tuple3[] elements = new Tuple3[]{
-                Tuple3.of("a", 1L, 1000000050000L),
-                Tuple3.of("a", 1L, 1000000054000L),
-                Tuple3.of("a", 1L, 1000000079900L),
-                Tuple3.of("a", 1L, 1000000115000L),
-                Tuple3.of("b", 1L, 1000000100000L),
-                Tuple3.of("b", 1L, 1000000108000L)
+                Tuple3.of("a", 1L, 1000000050000L),// 2001/9/9 9:47:30
+                Tuple3.of("a", 1L, 1000000054000L),// 2001/9/9 9:47:34
+                Tuple3.of("a", 1L, 1000000052000L),// 2001/9/9 9:47:32
+                Tuple3.of("a", 1L, 1000000079900L),// 2001/9/9 9:47:59
+                Tuple3.of("a", 1L, 1000000065000L),// 2001/9/9 9:47:45
+                Tuple3.of("a", 1L, 1000000115000L),// 2001/9/9 9:48:35
+                Tuple3.of("b", 1L, 1000000100000L),// 2001/9/9 9:48:20
+                Tuple3.of("b", 1L, 1000000108000L) // 2001/9/9 9:48:28
         };
 
         int count = 0;

@@ -2,7 +2,9 @@ package function.processfunction;
 
 import entity.CountWithTimestamp;
 import org.apache.flink.api.common.state.ValueState;
+import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.util.Collector;
 
@@ -17,6 +19,13 @@ import java.util.Date;
 public class CountWithTimeoutProcessFunction extends ProcessFunction<Tuple2<String, Long>, Tuple2<String, Long>> {
 
     private ValueState<CountWithTimestamp> state;
+
+    //最先调用
+    @Override
+    public void open(Configuration parameters) throws Exception {
+        //根据上下文获取状态
+        state = getRuntimeContext().getState(new ValueStateDescriptor<CountWithTimestamp>("myState", CountWithTimestamp.class));
+    }
 
     @Override
     public void processElement(Tuple2<String, Long> input, Context context, Collector<Tuple2<String, Long>> output) throws Exception {
@@ -49,7 +58,8 @@ public class CountWithTimeoutProcessFunction extends ProcessFunction<Tuple2<Stri
         CountWithTimestamp res = state.value();
         System.out.println("当前时间为："+new Date(timestamp)+res);
         if (timestamp >= res.lastModified + 9000) {
-            System.out.println("定时器被触发："+"当前时间为"+new Date(timestamp)+" 最近修改时间为"+new Date(res.lastModified));
+            String info = "定时器被触发："+"当前时间为"+new Date(timestamp)+" 最近修改时间为"+new Date(res.lastModified);
+            System.out.println(info);
             out.collect(new Tuple2<String, Long>(res.key, res.count));
         }
     }

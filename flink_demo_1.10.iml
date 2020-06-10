@@ -11,17 +11,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file:///download/sourceData/flink-1.10.0/lib" />
+          <root url="file://$MODULE_DIR$/../../download/sourceData/flink-1.10.0/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file:///download/sourceData/flink-1.10.0/lib" />
+          <root url="file://$MODULE_DIR$/../../download/sourceData/flink-1.10.0/lib" />
         </SOURCES>
-        <jarDirectory url="file:///download/sourceData/flink-1.10.0/lib" recursive="false" />
-        <jarDirectory url="file:///download/sourceData/flink-1.10.0/lib" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/../../download/sourceData/flink-1.10.0/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../download/sourceData/flink-1.10.0/lib" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
     <orderEntry type="library" name="scala-sdk-2.11.12" level="application" />

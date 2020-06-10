@@ -4,10 +4,12 @@ import com.alibaba.fastjson.JSON;
 import entity.Student;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 
+import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.api.java.tuple.Tuple2;
 
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
+import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.windowing.time.Time;
@@ -24,8 +26,8 @@ public class RunMainJava {
 
     public static void main(String[] args) throws Exception{
         //helloFlink();
-        //flatMapOperate();
-        mapOperate();
+        flatMapOperate();
+        //mapOperate();
         //filterOperate();
     }
 
@@ -82,14 +84,14 @@ public class RunMainJava {
         DataStream<Student> objDataStream = input.map(string -> JSON.parseObject(string, Student.class));
 
         //转换 按key分区
-        /*KeyedStream<Student,String> result = objDataStream.keyBy(new KeySelector<Student,String>(){
+        KeyedStream<Student,String> result = objDataStream.keyBy(new KeySelector<Student,String>(){
             @Override
             public String getKey(Student value) throws Exception {
                 return String.valueOf(value.getPersonalID());
             }
-        });*/
+        });
         //KeyedStream<Student,String> result2 = objDataStream.keyBy( (KeySelector<Student, String>) value -> String.valueOf( value.getPersonalID() ) );
-        //result.print().setParallelism(1);
+        result.print().setParallelism(1);
 
         // 将结果打印到控制台，注意这里使用的是单线程打印，而非多线程
 
@@ -114,7 +116,7 @@ public class RunMainJava {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
         //读取文本文件中的数据
-        DataStreamSource<String> streamSource = env.readTextFile("/temp/word.txt");
+        DataStreamSource<String> streamSource = env.readTextFile("/Users/cheney/Documents/1data/temp/word.txt");
 
         //进行逻辑计算
         SingleOutputStreamOperator<Tuple2<String, Integer>> dataStream = streamSource
