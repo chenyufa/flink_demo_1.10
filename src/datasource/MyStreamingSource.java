@@ -1,5 +1,6 @@
 package datasource;
 
+import entity.Item;
 import org.apache.flink.streaming.api.functions.source.SourceFunction;
 
 import java.util.Random;

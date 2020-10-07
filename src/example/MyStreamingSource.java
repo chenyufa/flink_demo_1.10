@@ -7,7 +7,7 @@ package example;
  * @ version: 1.0.0
  */
 
-import datasource.Item;
+import entity.Item;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.typeinfo.TypeHint;
 import org.apache.flink.api.common.typeinfo.TypeInformation;

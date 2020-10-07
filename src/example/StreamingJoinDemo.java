@@ -1,7 +1,7 @@
 package example;
 
 
-import datasource.Item;
+import entity.Item;
 import datasource.MyStreamingSource;
 
 import org.apache.flink.api.common.functions.MapFunction;
