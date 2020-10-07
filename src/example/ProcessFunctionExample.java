@@ -1,4 +1,4 @@
-package main;
+package example;
 
 import datasource.MyStreamDataSource;
 import org.apache.flink.api.common.functions.MapFunction;
