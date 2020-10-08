@@ -33,6 +33,15 @@ public class MyStreamingSource implements SourceFunction<Item> {
 
     private final Integer MAX_SIZE = 20;
 
+    public MyStreamingSource() {
+        System.out.println("P1-MyStreamingSource 构造函数。。。");
+    }
+
+    public MyStreamingSource(boolean isRunning, Integer currentSize) {
+        this.isRunning = isRunning;
+        this.currentSize = currentSize;
+    }
+
     /**
      * 重写run方法产生一个源源不断的数据发送源
      * @param ctx
@@ -41,13 +50,13 @@ public class MyStreamingSource implements SourceFunction<Item> {
     public void run(SourceContext<Item> ctx) throws Exception {
         while(isRunning){
             if(currentSize.equals(MAX_SIZE)){
-                isRunning = false;
+                cancel();
             }
             currentSize ++;
 
+            System.out.println("P1-生产数据,第"+currentSize+"条....");
             Item item = generateItem();
             ctx.collect(item);
-
             //每秒产生一条数据
             Thread.sleep(1000);
         }
@@ -90,6 +99,7 @@ class StreamingDemo {
         DataStream<Item> evenSelect = source.split(new OutputSelector<Item>() {
             @Override
             public Iterable<String> select(Item value) {
+                System.out.println(" P1- evenSelect 分流中...");
                 List<String> output = new ArrayList<>();
                 if (value.getId() % 2 == 0) {
                     output.add("even");
@@ -103,6 +113,7 @@ class StreamingDemo {
         DataStream<Item> oddSelect = source.split(new OutputSelector<Item>() {
             @Override
             public Iterable<String> select(Item value) {
+                System.out.println(" P1- oddSelect 分流中...");
                 List<String> output = new ArrayList<>();
                 if (value.getId() % 2 == 0) {
                     output.add("even");
@@ -117,11 +128,15 @@ class StreamingDemo {
         bsTableEnv.createTemporaryView("evenTable", evenSelect, "name,id");
         bsTableEnv.createTemporaryView("oddTable", oddSelect, "name,id");
 
+        System.out.println(" P1- 开始执行 join sql sqlQuery ...");
         Table queryTable = bsTableEnv.sqlQuery("select a.id,a.name,b.id,b.name from evenTable as a join oddTable as b on a.name = b.name");
+        System.out.println(" P1- 结束执行 join sql sqlQuery ...");
 
         queryTable.printSchema();
 
+        System.out.println(" P1- 开始执行 toRetractStream ...");
         bsTableEnv.toRetractStream(queryTable, TypeInformation.of(new TypeHint<Tuple4<Integer,String,Integer,String>>(){})).print();
+        System.out.println(" P1- 结束执行 toRetractStream ...");
 
         bsEnv.execute("streaming sql job");
     }

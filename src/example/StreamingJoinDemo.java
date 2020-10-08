@@ -45,6 +45,7 @@ public class StreamingJoinDemo {
         DataStream<Item> evenSelect = source.split(new OutputSelector<Item>() {
             @Override
             public Iterable<String> select(Item value) {
+                System.out.println(" P0- evenSelect 分流中...");
                 List<String> output = new ArrayList<>();
                 if (value.getId() % 2 == 0) {
                     output.add("even");
@@ -58,6 +59,7 @@ public class StreamingJoinDemo {
         DataStream<Item> oddSelect = source.split(new OutputSelector<Item>() {
             @Override
             public Iterable<String> select(Item value) {
+                System.out.println(" P0- oddSelect 分流中...");
                 List<String> output = new ArrayList<>();
                 if (value.getId() % 2 == 0) {
                     output.add("even");
@@ -72,11 +74,15 @@ public class StreamingJoinDemo {
         bsTableEnv.createTemporaryView("evenTable", evenSelect, "id,name");
         bsTableEnv.createTemporaryView("oddTable", oddSelect, "id,name");
 
+        System.out.println(" P0- 开始执行 join sql sqlQuery ...");
         Table queryTable = bsTableEnv.sqlQuery("select a.id as aid,a.name as aname,b.id as bid,b.name as bname from evenTable as a join oddTable as b on a.name = b.name");
+        System.out.println(" P0- 结束执行 join sql sqlQuery ...");
 
         queryTable.printSchema();
 
+        System.out.println(" P0- 开始执行 toRetractStream ...");
         bsTableEnv.toRetractStream(queryTable, TypeInformation.of(new TypeHint<Tuple4<Integer,String,Integer,String>>(){})).print();
+        System.out.println(" P0- 结束执行 toRetractStream ...");
 
         bsEnv.execute("streaming sql job");
 

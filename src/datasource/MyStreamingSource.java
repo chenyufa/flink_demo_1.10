@@ -3,6 +3,7 @@ package datasource;
 import entity.Item;
 import org.apache.flink.streaming.api.functions.source.SourceFunction;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -19,6 +20,14 @@ public class MyStreamingSource implements SourceFunction<Item> {
 
     private final Integer MAX_SIZE = 20;
 
+    public MyStreamingSource() {
+        System.out.println("P0-MyStreamingSource 构造函数。。。");
+    }
+
+    public MyStreamingSource(boolean isRunning, Integer currentSize) {
+        this.isRunning = isRunning;
+        this.currentSize = currentSize;
+    }
 
     /**
      * 重写run方法产生一个源源不断的数据发送源
@@ -30,10 +39,10 @@ public class MyStreamingSource implements SourceFunction<Item> {
         while(isRunning){
 
             if(currentSize.equals(MAX_SIZE)){
-                isRunning = false;
+                cancel();
             }
             currentSize ++;
-
+            System.out.println("P0-生产数据,第"+currentSize+"条....");
             Item item = generateItem();
             ctx.collect(item);
             //每秒产生一条数据
@@ -49,9 +58,12 @@ public class MyStreamingSource implements SourceFunction<Item> {
     //随机产生一条商品数据
     private Item generateItem(){
         int i = new Random().nextInt(100);
-
+        ArrayList<String> list = new ArrayList();
+        list.add("HAT");
+        list.add("TIE");
+        list.add("SHOE");
         Item item = new Item();
-        item.setName("name" + i);
+        item.setName(list.get(new Random().nextInt(3)));
         item.setId(i);
         return item;
     }
