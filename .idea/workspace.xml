@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76c08e70-965a-481c-b8ad-89171dcff78a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/datasource/MyKafkaSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/AsyncIOData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/example/AsyncIOExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/example/DataSkewExample.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operator/datadistinct/OptimizationHyperLogLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/optconsumer/KafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/optproducer/KafkaPartitionProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/optproducer/KafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/CustomDeSerializationSchema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_sql_connector_kafka_2_11_1_10_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/example/CounterExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/example/MyReduceFunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/function/MyAverageAggregateFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sink/RedisSink01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sink/RedisSink02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sink/SelfRedisSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_bahir_flink_connector_redis_2_11_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_8_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flink_demo_1.10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flink_demo_1.10.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasource/MyStreamingSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasource/MyStreamingSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/MyStreamingSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/MyStreamingSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/StreamingJoinDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/StreamingJoinDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sink/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sink/TestMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/RunMainJava$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/RunMainJava$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/RunMainJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/RunMainJava.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/flink_demo_1.10-1.0-SNAPSHOT.jar" beforeDir="false" />
@@ -58,25 +56,25 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="function.processfunction" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="/temp" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.KafkaPartitionProducer">
-    <configuration name="AsyncIOExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.AsyncIOExample" />
+  <component name="RunManager" selected="Application.TestMain">
+    <configuration name="CounterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.CounterExample" />
       <module name="flink_demo_1.10" />
       <extension name="coverage">
         <pattern>
@@ -114,21 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="optproducer.KafkaProducer" />
-      <module name="flink_demo_1.10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="optproducer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StreamingJoinDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.StreamingJoinDemo" />
+    <configuration name="MyReduceFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.MyReduceFunctionExample" />
       <module name="flink_demo_1.10" />
       <extension name="coverage">
         <pattern>
@@ -140,13 +125,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sink.TestMain" />
+      <module name="flink_demo_1.10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sink.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMain" />
+        <item itemvalue="Application.CounterExample" />
+        <item itemvalue="Application.MyReduceFunctionExample" />
         <item itemvalue="Application.KafkaPartitionProducer" />
         <item itemvalue="Application.KafkaConsumer" />
-        <item itemvalue="Application.KafkaProducer" />
-        <item itemvalue="Application.AsyncIOExample" />
-        <item itemvalue="Application.StreamingJoinDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +192,8 @@
       <workItem from="1598920458189" duration="1378000" />
       <workItem from="1600668539103" duration="2459000" />
       <workItem from="1601629178503" duration="16413000" />
-      <workItem from="1601814083591" duration="47237000" />
+      <workItem from="1601814083591" duration="51082000" />
+      <workItem from="1602904300235" duration="8657000" />
     </task>
     <task id="LOCAL-00001" summary="ProcessFunction Monitor Demo">
       <created>1586858941684</created>
@@ -274,38 +273,38 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="603" y="224" key="#xdebugger.evaluate/0.23.1680.982@0.23.1680.982" timestamp="1601904959523" />
-    <state width="1638" height="449" key="GridCell.Tab.0.bottom" timestamp="1602161157154">
+    <state width="1638" height="320" key="GridCell.Tab.0.bottom" timestamp="1602906531131">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.0.bottom/0.23.1680.982@0.23.1680.982" timestamp="1602161157154" />
-    <state width="1638" height="449" key="GridCell.Tab.0.center" timestamp="1602161157153">
+    <state width="1638" height="320" key="GridCell.Tab.0.bottom/0.23.1680.982@0.23.1680.982" timestamp="1602906531131" />
+    <state width="1638" height="320" key="GridCell.Tab.0.center" timestamp="1602906531130">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.0.center/0.23.1680.982@0.23.1680.982" timestamp="1602161157153" />
-    <state width="1638" height="449" key="GridCell.Tab.0.left" timestamp="1602161157152">
+    <state width="1638" height="320" key="GridCell.Tab.0.center/0.23.1680.982@0.23.1680.982" timestamp="1602906531130" />
+    <state width="1638" height="320" key="GridCell.Tab.0.left" timestamp="1602906531129">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.0.left/0.23.1680.982@0.23.1680.982" timestamp="1602161157152" />
-    <state width="1638" height="449" key="GridCell.Tab.0.right" timestamp="1602161157153">
+    <state width="1638" height="320" key="GridCell.Tab.0.left/0.23.1680.982@0.23.1680.982" timestamp="1602906531129" />
+    <state width="1638" height="320" key="GridCell.Tab.0.right" timestamp="1602906531130">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.0.right/0.23.1680.982@0.23.1680.982" timestamp="1602161157153" />
-    <state width="1638" height="449" key="GridCell.Tab.1.bottom" timestamp="1602161157155">
+    <state width="1638" height="320" key="GridCell.Tab.0.right/0.23.1680.982@0.23.1680.982" timestamp="1602906531130" />
+    <state width="1638" height="320" key="GridCell.Tab.1.bottom" timestamp="1602906530912">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.1.bottom/0.23.1680.982@0.23.1680.982" timestamp="1602161157155" />
-    <state width="1638" height="449" key="GridCell.Tab.1.center" timestamp="1602161157155">
+    <state width="1638" height="320" key="GridCell.Tab.1.bottom/0.23.1680.982@0.23.1680.982" timestamp="1602906530912" />
+    <state width="1638" height="320" key="GridCell.Tab.1.center" timestamp="1602906530912">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.1.center/0.23.1680.982@0.23.1680.982" timestamp="1602161157155" />
-    <state width="1638" height="449" key="GridCell.Tab.1.left" timestamp="1602161157154">
+    <state width="1638" height="320" key="GridCell.Tab.1.center/0.23.1680.982@0.23.1680.982" timestamp="1602906530912" />
+    <state width="1638" height="320" key="GridCell.Tab.1.left" timestamp="1602906530911">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.1.left/0.23.1680.982@0.23.1680.982" timestamp="1602161157154" />
-    <state width="1638" height="449" key="GridCell.Tab.1.right" timestamp="1602161157155">
+    <state width="1638" height="320" key="GridCell.Tab.1.left/0.23.1680.982@0.23.1680.982" timestamp="1602906530911" />
+    <state width="1638" height="320" key="GridCell.Tab.1.right" timestamp="1602906530912">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="449" key="GridCell.Tab.1.right/0.23.1680.982@0.23.1680.982" timestamp="1602161157155" />
+    <state width="1638" height="320" key="GridCell.Tab.1.right/0.23.1680.982@0.23.1680.982" timestamp="1602906530912" />
     <state x="378" y="176" key="Maven.ArtifactSearchDialog" timestamp="1601977202408">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
@@ -314,22 +313,22 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="452" y="215" key="NewModule_or_Project.wizard/0.23.1680.982@0.23.1680.982" timestamp="1601905678600" />
-    <state x="328" y="95" key="SettingsEditor" timestamp="1601712610863">
+    <state x="328" y="95" key="SettingsEditor" timestamp="1603112339070">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state x="328" y="95" key="SettingsEditor/0.23.1680.982@0.23.1680.982" timestamp="1601712610863" />
+    <state x="328" y="95" key="SettingsEditor/0.23.1680.982@0.23.1680.982" timestamp="1603112339070" />
     <state width="840" height="491" key="XDebugger.FullValuePopup" timestamp="1601811416895">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state width="840" height="491" key="XDebugger.FullValuePopup/0.23.1680.982@0.23.1680.982" timestamp="1601811416895" />
-    <state x="314" y="136" width="1066" height="697" key="find.popup" timestamp="1602165968179">
+    <state x="314" y="136" width="1066" height="697" key="find.popup" timestamp="1602947256643">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state x="314" y="136" width="1066" height="697" key="find.popup/0.23.1680.982@0.23.1680.982" timestamp="1602165968179" />
-    <state x="505" y="165" width="670" height="676" key="search.everywhere.popup" timestamp="1602165970632">
+    <state x="314" y="136" width="1066" height="697" key="find.popup/0.23.1680.982@0.23.1680.982" timestamp="1602947256643" />
+    <state x="505" y="165" width="670" height="676" key="search.everywhere.popup" timestamp="1602943585335">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state x="505" y="165" width="670" height="676" key="search.everywhere.popup/0.23.1680.982@0.23.1680.982" timestamp="1602165970632" />
+    <state x="505" y="165" width="670" height="676" key="search.everywhere.popup/0.23.1680.982@0.23.1680.982" timestamp="1602943585335" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
